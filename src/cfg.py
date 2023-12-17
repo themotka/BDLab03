@@ -1,6 +1,4 @@
 # Postgres
-inNeedToCreatePG = False
-tableName = "db"
 usernamePG = "postgres"
 passwordPG = "themotka"
 hostnamePG = "localhost"
@@ -9,6 +7,16 @@ dbPG = "taxi"
 postgres = f"postgresql://{usernamePG}:{passwordPG}@{hostnamePG}:{portPG}/{dbPG}"
 
 # data folder (must be created)
-inNeedToCreateDB = False
 fileDB = "tiny_taxi.db"
 fileCSV = "tiny_data.csv"
+
+# for both local and postgres
+tableName = "db"
+
+# benchmark configuration
+inNeedToCreatePG = False
+inNeedToCreateDB = False
+inNeedToTestPsycorg2 = True
+inNeedToTestSQLite = True
+inNeedToTestDuckDB = True
+
